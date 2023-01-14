@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(120deg, #fe2, #d64);
-    color: #fff;
+    color: rgb(117, 8, 8);
     text-align: center;
     padding-block: 30px;
 }
@@ -22,15 +22,16 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 6px #d64 ;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px #d64;
+    animation: appear 1.2s ease-out ;
 }
 
 .order {
     background: rgba(255, 255, 255, 0.166);
     margin-inline: auto;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 2px 2px 6px #d64;
     color: rgb(32, 5, 5);
 }
@@ -42,5 +43,26 @@ body {
 
 img {
     max-width: 100%;
-    border-radius: 5%;
+    border-radius: 8px;
+}
+
+p {
+    padding-block: 10px;
+    font-weight: 500;
+}
+
+span {
+    font-weight: 400;
+    color: rgb(117, 8, 8);
+}
+
+@keyframes appear {
+    0% {
+        opacity: .3;
+        scale: .9;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
 }
